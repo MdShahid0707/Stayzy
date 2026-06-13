@@ -1,24 +1,43 @@
 Stayzy 🏡
 
-Stayzy is a full-stack property listing platform inspired by Airbnb. Users can create, browse, edit, and manage property listings with image uploads, location mapping, authentication, and review functionality.
+Stayzy is a full-stack property listing platform inspired by Airbnb where users can discover, create, manage, and review property listings.
+
+🚀 Live Demo
+
+Website: https://stayzy-agxz.onrender.com
+
+Explore the deployed application and browse listings, create accounts, add properties, upload images, and leave reviews. The site is currently hosted on Render.
+
+---
 
 Features
 
 - User Authentication (Signup/Login/Logout)
-- Create, Edit, and Delete Listings
-- Upload Property Images using Cloudinary
-- Interactive Maps with Geoapify & MapLibre
-- Property Reviews and Ratings
-- Session Management with MongoDB Store
-- Flash Messages for User Feedback
-- Responsive UI using EJS Templates
+- Create, Edit & Delete Listings
+- Property Image Uploads
+- Interactive Location Mapping
+- Reviews & Ratings System
+- Session-Based Authentication
+- Responsive User Interface
+- Flash Messages & Error Handling
 
 Tech Stack
+
+Frontend
+
+- EJS
+- HTML5
+- CSS3
+- Bootstrap
+- JavaScript
 
 Backend
 
 - Node.js
 - Express.js
+
+Database
+
 - MongoDB
 - Mongoose
 
@@ -28,85 +47,125 @@ Authentication
 - Passport Local Strategy
 - Passport Local Mongoose
 
-File Uploads
+Cloud Services
 
-- Multer
-- Cloudinary
-- Multer Storage Cloudinary
+- Cloudinary (Image Storage)
+- Geoapify (Geocoding API)
+- MapLibre (Maps)
 
-Frontend
+---
 
-- EJS
-- EJS-Mate
-- CSS
-- JavaScript
+Installation
 
-Other Libraries
+Clone Repository
 
-- Joi (Validation)
-- Connect Flash
-- Express Session
-- Connect Mongo
+git clone https://github.com/MdShahid0707/stayzy.git
+cd stayzy
+
+Install Dependencies
+
+npm install
+
+Configure Environment Variables
+
+Create a ".env" file:
+
+ATLAS_DB_URL=your_mongodb_uri
+
+SECRET=your_session_secret
+
+CLOUD_NAME=your_cloudinary_name
+CLOUD_API_KEY=your_cloudinary_key
+CLOUD_API_SECRET=your_cloudinary_secret
+
+MAP_TOKEN=your_geoapify_api_key
+
+Run Locally
+
+npm start
+
+or
+
+nodemon app.js
+
+Visit:
+
+http://localhost:8080
 
 ---
 
 Project Structure
 
-Stayzy/
+Stayzy
 │
 ├── controllers/
 ├── models/
 ├── routes/
 ├── views/
 ├── public/
-│   ├── css/
-│   └── js/
 ├── utils/
-├── init/
-├── app.js
 ├── middleware.js
 ├── schema.js
-└── cloudConfig.js
+├── cloudConfig.js
+├── app.js
+└── package.json
 
 ---
 
-Installation
+Core Functionalities
 
-1. Clone the Repository
+Listings
 
-git clone https://github.com/yourusername/stayzy.git
-cd stayzy
+- Browse all available properties
+- View detailed listing information
+- Create and manage listings
+- Upload property images
 
-2. Install Dependencies
+Reviews
 
-npm install
+- Add reviews and ratings
+- Delete own reviews
 
-3. Create Environment Variables
+Authentication
 
-Create a ".env" file in the root directory:
+- Secure registration and login
+- Route protection
+- Persistent sessions
 
-ATLAS_DB_URL=your_mongodb_connection_string
+Maps
 
-SECRET=your_session_secret
+- Convert locations to coordinates
+- Display listings on interactive maps
 
-CLOUD_NAME=your_cloudinary_cloud_name
-CLOUD_API_KEY=your_cloudinary_api_key
-CLOUD_API_SECRET=your_cloudinary_api_secret
+---
 
-MAP_TOKEN=your_geoapify_api_key
+Future Enhancements
 
-4. Run the Application
+- Advanced Search & Filters
+- Wishlist/Favorites
+- Property Booking System
+- Payment Integration
+- User Profiles
+- Admin Dashboard
 
-node app.js
+---
 
-or
+Screenshots
 
-nodemon app.js
+Add screenshots of:
 
-The application will start on:
+- Home Page
+- Listing Details Page
+- Create Listing Page
+- Login & Signup Pages
 
-http://localhost:8080
+---
 
+Author
+
+Mohd Aamir
+
+Built with Node.js, Express.js, MongoDB, Cloudinary, Geoapify, and MapLibre.
 ---
 
 Database Setup
