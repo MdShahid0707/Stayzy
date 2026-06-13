@@ -98,16 +98,27 @@ Project Structure
 
 Stayzy
 │
+
 ├── controllers/
+
 ├── models/
+
 ├── routes/
+
 ├── views/
+
 ├── public/
+
 ├── utils/
+
 ├── middleware.js
+
 ├── schema.js
+
 ├── cloudConfig.js
+
 ├── app.js
+
 └── package.json
 
 ---
