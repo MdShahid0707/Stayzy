@@ -247,6 +247,6 @@ This project is licensed under the ISC License.
 
 Author
 
-Mohd Aamir
+Mohd Shahid
 
 Built as a full-stack web development project using Node.js, Express, MongoDB, Cloudinary, and Geoapify.
